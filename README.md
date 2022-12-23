@@ -1,9 +1,9 @@
-# EIP-2535 Multi-Facets Proxy Factor
+# EIP-2535 Multi-Facets Proxy Factor [![Linux Build](https://github.com/G7DAO/multi-faceted-proxy-factory/actions/workflows/Linux-npx-hardhat-test.yml/badge.svg)](https://github.com/G7DAO/multi-faceted-proxy-factory/actions/workflows/Linux-npx-hardhat-test.yml)
 
 EVM Compatible Smart Contract system that will create Audited On-Chain EIP-2535 
 Smart Contract Facets that can be used as blueprints that developers can use to build EIP-2535 Smart Contracts.  
 
-[EIP-2535: Diamonds, Multi-Facet Proxy](https://eips.ethereum.org/EIPS/eip-2535)
+[EIP-2535: Diamonds, Multi-Facet Proxy](https://eips.ethereum.org/EIPS/eip-2535) 
 
 ## Summary
 The EIP-2535 smart contracts are extensible without having to redeploy existing functionality. 
