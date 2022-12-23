@@ -1,4 +1,4 @@
-# EIP-2535 Multi-Facets Proxy Factor [![Linux Build](https://github.com/G7DAO/multi-faceted-proxy-factory/actions/workflows/Linux-npx-hardhat-test.yml/badge.svg)](https://github.com/G7DAO/multi-faceted-proxy-factory/actions/workflows/Linux-npx-hardhat-test.yml)
+# EIP-2535 Multi-Facets Proxy Factory [![Linux Build](https://github.com/G7DAO/multi-faceted-proxy-factory/actions/workflows/Linux-npx-hardhat-test.yml/badge.svg)](https://github.com/G7DAO/multi-faceted-proxy-factory/actions/workflows/Linux-npx-hardhat-test.yml)
 
 EVM Compatible Smart Contract system that will create Audited On-Chain EIP-2535 
 Smart Contract Facets that can be used as blueprints that developers can use to build EIP-2535 Smart Contracts.  
