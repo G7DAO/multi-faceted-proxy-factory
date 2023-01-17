@@ -3,7 +3,7 @@
 pragma solidity ^0.8.2;
 
 import "./EIP2535Initializable.sol";
-import "@gnus.ai/contracts-upgradeable-diamond/access/AccessControlEnumerableUpgradeable.sol";
+import "@gnus.ai/contracts-upgradeable-diamond/contracts/access/AccessControlEnumerableUpgradeable.sol";
 import "../libraries/LibDiamond.sol";
 
 abstract contract G7DAOAccessControl is EIP2535Initializable, AccessControlEnumerableUpgradeable  {

@@ -4,8 +4,8 @@ pragma solidity ^0.8.2;
 import "./interfaces/IDiamondLoupe.sol";
 import "./interfaces/IDiamondCut.sol";
 import "./Diamond.sol";
-import "@gnus.ai/contracts-upgradeable-diamond/utils/introspection/ERC165StorageUpgradeable.sol";
-import "@gnus.ai/contracts-upgradeable-diamond/token/ERC20/IERC20Upgradeable.sol";
+import "@gnus.ai/contracts-upgradeable-diamond/contracts/utils/introspection/ERC165StorageUpgradeable.sol";
+import "@gnus.ai/contracts-upgradeable-diamond/contracts/token/ERC20/IERC20Upgradeable.sol";
 import "./utils/EIP2535Initializable.sol";
 
 contract G7DAODiamond is Diamond, ERC165StorageUpgradeable, EIP2535Initializable {
@@ -29,7 +29,12 @@ contract G7DAODiamond is Diamond, ERC165StorageUpgradeable, EIP2535Initializable
     // Finalize initialization after every facet has initialized only
     function FinalizeInitialization() external {
         require(LibDiamond.diamondStorage().contractOwner == msg.sender, "Only SuperAdmin allowed");
-        InitializableStorage.layout()._initialized = true;
+        InitializableStorage.layout()._initialized = 1;
+    }
+
+    function FinalReinitialize(uint8 version) external {
+        require(LibDiamond.diamondStorage().contractOwner == msg.sender, "Only SuperAdmin allowed");
+        InitializableStorage.layout()._initialized = version;
     }
 
 }

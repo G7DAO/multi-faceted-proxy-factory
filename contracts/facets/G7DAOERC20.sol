@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.2;
 
-import "@gnus.ai/contracts-upgradeable-diamond/token/ERC20/ERC20Upgradeable.sol";
-import "@gnus.ai/contracts-upgradeable-diamond/token/ERC20/ERC20Storage.sol";
+import "@gnus.ai/contracts-upgradeable-diamond/contracts/token/ERC20/ERC20Upgradeable.sol";
+import "@gnus.ai/contracts-upgradeable-diamond/contracts/token/ERC20/ERC20Storage.sol";
 import "../utils/G7DAOAccessControl.sol";
 
 /// Simple ERC20 contract with no extensions
